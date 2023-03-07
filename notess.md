@@ -1,9 +1,8 @@
 # my summary
 Factory functions are one way to create multiple isntances of an object by calling the function and assining it to a variable. the only downside is that they all have a new instance of their props, meaning they all have a unique instance of their member methods, meaning if u change a func in one it wont change in another. To fix this we must inherit (using setPrototypeOf) an obj that will let all children use its prop
 
-Use for prototypal inheritence on OBJECTS or constructor funcs INSTANCE (classes):
+Use prototypal inheritence onfactory funcs / regular OBJECTS or constructor funcs INSTANCE (classes):
 Object.setPrototypeOf(child, parent)
-Object.getPrototypeOf(child, parent)
 
 
 
