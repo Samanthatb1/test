@@ -4,6 +4,8 @@ Factory functions are one way to create multiple isntances of an object by calli
 Use prototypal inheritence onfactory funcs / regular OBJECTS or constructor funcs INSTANCE (classes):
 Object.setPrototypeOf(child, parent)
 
+.prototype is done on the class
+setPrototypeOf is done on the instance
 
 
 
