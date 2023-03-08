@@ -4,6 +4,9 @@ Factory functions are one way to create multiple isntances of an object by calli
 Use prototypal inheritence on factory funcs / regular OBJECTS instance, or constructor funcs INSTANCE (classes):
 Object.setPrototypeOf(child, parent)
 
+frpm what ive read, for constructor functions, the prototype is the constructor and its not really good to overwrite it, so instead use 
+``` ConstructorName.protoype.newProp = prop ``` for new stuff
+
 .prototype is done on the class
 setPrototypeOf is done on the instance
 
