@@ -445,6 +445,7 @@ Object.setPrototypeOf(mia, Parent)
 console.log(mia)
 console.log(mia.getNamePeriod())
 ```
+- the reason why when you tried to do BOTH setPrototypeOf AND class.prototype.prop = it didnt work is because once you make an obj, it takes the prototype it has when it was made, if u change it later it wont change, it only uses the prototype it was given right before it was made
 
 ## __ proto __ vs prototype
 object.__ proto __ === class.prototype
