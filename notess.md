@@ -13,6 +13,7 @@ setPrototypeOf is done on the instance
 
 
 -- 
+
 promises are asyncronous, meaning theres two ways to deal with them: await or then.
 
 
