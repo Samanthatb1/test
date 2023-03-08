@@ -1,7 +1,7 @@
 # my summary
 Factory functions are one way to create multiple isntances of an object by calling the function and assining it to a variable. the only downside is that they all have a new instance of their props, meaning they all have a unique instance of their member methods, meaning if u change a func in one it wont change in another. To fix this we must inherit (using setPrototypeOf) an obj that will let all children use its prop
 
-Use prototypal inheritence onfactory funcs / regular OBJECTS or constructor funcs INSTANCE (classes):
+Use prototypal inheritence on factory funcs / regular OBJECTS, or constructor funcs INSTANCE (classes):
 Object.setPrototypeOf(child, parent)
 
 .prototype is done on the class
@@ -12,22 +12,10 @@ setPrototypeOf is done on the instance
 
 
 
-
+-- 
 promises are asyncronous, meaning theres two ways to deal with them: await or then.
 
 
-
-
-
-
-
-odal functions
-alert
-shows a message.
-prompt
-shows a message asking the user to input text. It returns the text or, if Cancel button or Esc is clicked, null.
-confirm
-shows a message and waits for the user to press “OK” or “Cancel”. It returns true for OK and false for Cancel/Esc.
 
 ## strict mode:
 - The purpose of "use strict" is to indicate that the code should be executed in "strict mode"
