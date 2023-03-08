@@ -747,3 +747,16 @@ console.log(multiply10(3))
 console.log(multiply10(4))
 console.log(multiply10(3))
 ```
+
+# hoisting
+```
+blah blah
+var x = 5;
+```
+BECOMES
+```
+var x;
+blah blah
+x = 5
+```
+this is why you can declare / call functions anywhere on the page. But if you make a func with const name = () => then you CANT use it anywhere since **const and let are not hoisted**
