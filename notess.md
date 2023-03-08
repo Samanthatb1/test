@@ -331,6 +331,7 @@ class Square extends Particle{
 
 
 # Prototypal Inheritance tutorial
+- actual definition: When we read a property from object, and it’s missing, JavaScript automatically takes it from the prototype
 - imagine a function is ur class. if u add a func in that func with "this." its a property of
   the obj. If u add a function with the prototype key, then its a method. if u use "this."
   and u want to modify it later, you'll need to modify it in *every* instance
