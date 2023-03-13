@@ -10,6 +10,8 @@ frpm what ive read, for constructor functions, the prototype is the constructor 
 .prototype is done on the class
 setPrototypeOf is done on the instance
 
+``` obj.__proto__ === Object.prototype``` 
+
 
 
 
