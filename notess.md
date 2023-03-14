@@ -19,6 +19,7 @@ also... when you do this, you loose the "constructor" prop on prototype, so inst
 ```Class.prototype = {...newObj, constructor : Class}```
 recall constructor props just point to itself
 
+```.prototype``` is only applicable to constructor functions. if you do it on an obj, itll be undefined
 
 
 
