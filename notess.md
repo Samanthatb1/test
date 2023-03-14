@@ -4,19 +4,20 @@ Factory functions are one way to create multiple isntances of an object by calli
 Use prototypal inheritence on factory funcs / regular OBJECTS instance, or constructor funcs INSTANCE (classes):
 Object.setPrototypeOf(child, parent)
 
-frpm what ive read, for constructor functions, the prototype is the constructor and its not really good to overwrite it, so instead use 
-``` ConstructorName.protoype.newProp = prop ``` for new stuff
-
 .prototype is done on the class
 setPrototypeOf is done on the instance
 
 ``` obj.__proto__ === Object.prototype``` 
 -> ACTUAL SYNTAX ```Object.getPrototypeOf(me) == constructorFunc.prototype```
 
+frpm what ive read, for constructor functions, the prototype is the constructor and its not really good to overwrite it, so instead use 
+``` ConstructorName.protoype.newProp = prop ``` for new stuff
+
+
 if you set ```Class.prototype = ``` IT BETTER BE AN OBJ OR NULL. DO NOT SET IT TO A CONSTRUCTOR FUNC
 also... when you do this, you loose the "constructor" prop on prototype, so instead do 
-```Class.prototype = {newObj, constructor : Class.prototype.constructor}```
-
+```Class.prototype = {...newObj, constructor : Class}```
+recall constructor props just point to itself
 
 
 
