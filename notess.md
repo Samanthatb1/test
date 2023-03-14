@@ -11,6 +11,7 @@ frpm what ive read, for constructor functions, the prototype is the constructor 
 setPrototypeOf is done on the instance
 
 ``` obj.__proto__ === Object.prototype``` 
+-> ACTUAL SYNTAX ```Object.getPrototypeOf(me) == constructorFunc.prototype```
 
 
 
