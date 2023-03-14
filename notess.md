@@ -23,6 +23,7 @@ recall constructor props just point to itself
 
 ## .prototype
 - a special property that almost all functions have that is only used when a function is invoked as a constructor function
+- when a constructor is used to instantiate or create a new object, .prototype is set as the prototype of the new object (which is itself)
 
 ## [[prototype]]
 - [[Prototype]] is a hidden private property that all objects have in Javascript, it holds a reference to the object’s prototype.
