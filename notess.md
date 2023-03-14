@@ -1,3 +1,5 @@
+note to self: dont use dir. if u feel like ur missing smth do .prototype
+
 # my summary
 Factory functions are one way to create multiple isntances of an object by calling the function and assining it to a variable. the only downside is that they all have a new instance of their props, meaning they all have a unique instance of their member methods, meaning if u change a func in one it wont change in another. To fix this we must inherit (using setPrototypeOf) an obj that will let all children use its prop
 
