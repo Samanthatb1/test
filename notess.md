@@ -13,6 +13,10 @@ setPrototypeOf is done on the instance
 ``` obj.__proto__ === Object.prototype``` 
 -> ACTUAL SYNTAX ```Object.getPrototypeOf(me) == constructorFunc.prototype```
 
+if you set ```Class.prototype = ``` IT BETTER BE AN OBJ OR NULL. DO NOT SET IT TO A CONSTRUCTOR FUNC
+also... when you do this, you loose the "constructor" prop on prototype, so instead do 
+```Class.prototype = {newObj, constructor : Class.prototype.constructor}```
+
 
 
 
