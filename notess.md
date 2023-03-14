@@ -21,8 +21,12 @@ recall constructor props just point to itself
 
 ```.prototype``` is only applicable to constructor functions. if you do it on an obj, itll be undefined
 
+## .prototype
+- a special property that almost all functions have that is only used when a function is invoked as a constructor function
 
-
+## [[prototype]]
+- [[Prototype]] is a hidden private property that all objects have in Javascript, it holds a reference to the object’s prototype.
+- An object’s prototype is the object that an object inherits or descends from.
 
 -- 
 
